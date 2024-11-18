@@ -1,0 +1,99 @@
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #FFFFFF;
+    background-clip: padding-box;
+    border: none;
+    border-bottom:2px solid grey;
+}
+
+.form-field:focus-visible{
+        outline: none;
+
+    }
+
+h2{
+    margin-bottom: 4.5rem;
+    }
+
+
+.oe_signup_form{
+        margin: 50px auto;
+        max-width: 1200px;
+    }
+
+.section-title {
+        font-size: 1.25rem; /* Decrease the size to 1.25rem (20px) */
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+.contact-detail div{
+        display: flex;
+        align-items: center;
+    }
+
+.contact-detail div label{
+        margin-right: 10px;
+    }
+
+.contact-detail div input{
+        flex: 1;
+    }
+
+.miscellaneous-detail div{
+        display: flex;
+        align-items: center;
+    }
+
+.miscellaneous-detail div label{
+        margin-right: 10px;
+    }
+
+.miscellaneous-detail div input{
+        flex: 1;
+    }
+
+.account-detail div{
+        display: flex;
+        align-items: center;
+    }
+
+.account-detail div label{
+        margin-right: 10px;
+    }
+
+.account-detail div input{
+        flex: 1;
+    }
+
+.password-field div{
+        display: flex;
+        align-items: center;
+    }
+
+.password-field div label{
+        margin-right: 10px;
+    }
+
+.password-field div input{
+        flex: 1;
+    }
+
+.button-control button{
+        padding:10px;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+@media (max-width: 767px) {
+        .left, .right {
+            margin-bottom: 20px;
+        }
+    }
