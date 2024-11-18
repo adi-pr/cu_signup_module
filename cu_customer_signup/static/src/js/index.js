@@ -1,11 +1,12 @@
-odoo.define('auth_signup.signup', function (require) {
+odoo.define('auth_signup.signup', [
+    'web.public.widget'
+], function (require) {
     "use strict";
 
-    // Ensure dependencies are loaded
     const publicWidget = require('web.public.widget');
 
     publicWidget.registry.AuthSignup = publicWidget.Widget.extend({
-        selector: '.oe_signup_form',
+        selector: '.oe_signup_form', // Attach to the signup form element
         events: {
             'click .next-button': '_onNextButtonClick',
             'click .prev-button': '_onPrevButtonClick',
