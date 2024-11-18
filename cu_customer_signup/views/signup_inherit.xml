@@ -69,42 +69,6 @@
                     </div>
                 </div>
             </form>
-             <script type="text/javascript">
-                document.addEventListener('DOMContentLoaded', function () {
-                    const steps = document.querySelectorAll('.form-step');
-                    const prevBtn = document.getElementById('prevStep');
-                    const nextBtn = document.getElementById('nextStep');
-                    const submitBtn = document.getElementById('submitForm');
-                    let currentStep = 0;
-
-                    function updateStep() {
-                        steps.forEach((step, index) => {
-                            step.style.display = index === currentStep ? 'block' : 'none';
-                        });
-
-                        prevBtn.disabled = currentStep === 0;
-                        nextBtn.classList.toggle('d-none', currentStep === steps.length - 1);
-                        submitBtn.classList.toggle('d-none', currentStep !== steps.length - 1);
-                    }
-
-                    prevBtn.addEventListener('click', function () {
-                        if (currentStep > 0) {
-                            currentStep--;
-                            updateStep();
-                        }
-                    });
-
-                    nextBtn.addEventListener('click', function () {
-                        if (currentStep < steps.length - 1) {
-                            currentStep++;
-                            updateStep();
-                        }
-                    });
-
-                    // Initialize the form
-                    updateStep();
-                });
-            </script>
         </t>
     </template>
 </odoo>

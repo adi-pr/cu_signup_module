@@ -24,8 +24,7 @@
     'assets': {
         'web.assets_frontend': [
             'cu_customer_signup/static/src/css/style.scss',
+            'cu_customer_signup/static/src/js/index.js',
         ],
-
     },
-
 }
