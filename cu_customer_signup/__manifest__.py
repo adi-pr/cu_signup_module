@@ -14,7 +14,7 @@
     'license': 'LGPL-3',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'website', 'auth_signup', 'website_sale', 'sale', 'sale_subscription'],
+    'depends': ['base', 'website', 'auth_signup', 'website_sale', 'sale', 'sale_subscription', 'web'],
 
     # always loaded
     'data': [

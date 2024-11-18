@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="auth_signup.signup" name="Sign up login">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="../static/src/js/signup.js"></script>
+        </xpath>
         <t t-call="web.login_layout">
             <form class="oe_signup_form" role="form" method="post" t-if="not message">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
