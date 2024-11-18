@@ -13,23 +13,23 @@
                         <div class="row">
                             <div class="mb-3">
                                 <label for="name" class="col-form-label">First Name</label>
-                                <input type="text" name="name" id="name" class="form-field" placeholder="John" required />
+                                <input type="text" name="name" id="name" class="form-field" placeholder="John" required="required" />
                             </div>
                             <div class="mb-3">
                                 <label for="last_name" class="col-form-label">Last Name</label>
-                                <input type="text" name="last_name" id="last_name" class="form-field" placeholder="Doe" required />
+                                <input type="text" name="last_name" id="last_name" class="form-field" placeholder="Doe" required="required" />
                             </div>
                             <div class="mb-3">
                                 <label for="login">Email</label>
-                                <input type="email" name="login" id="login" class="form-field" placeholder="example@mail.com" required />
+                                <input type="email" name="login" id="login" class="form-field" placeholder="example@mail.com" required="required" />
                             </div>
                             <div class="mb-3">
                                 <label for="mobile">Mobile</label>
-                                <input type="tel" name="mobile" id="mobile" class="form-field" required />
+                                <input type="tel" name="mobile" id="mobile" class="form-field" required="required" />
                             </div>
                             <div class="mb-3">
                                 <label for="dob">D.O.B</label>
-                                <input type="date" name="dob" id="dob" class="form-field" required />
+                                <input type="date" name="dob" id="dob" class="form-field" required="required" />
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <h4 class="section-title">Address</h4>
                         <div class="mb-3">
                             <label for="street1">Street 1</label>
-                            <input type="text" name="street1" id="street1" class="form-field" required />
+                            <input type="text" name="street1" id="street1" class="form-field" required="required" />
                         </div>
                         <div class="mb-3">
                             <label for="street2">Street 2</label>
@@ -47,11 +47,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="city">City</label>
-                            <input type="text" name="city" id="city" class="form-field" required />
+                            <input type="text" name="city" id="city" class="form-field" required="required" />
                         </div>
                         <div class="mb-3">
                             <label for="country">Country</label>
-                            <select name="country" id="country" class="form-field" required>
+                            <select name="country" id="country" class="form-field" required="required">
                                 <option value="">Select a country</option>
                                 <t t-foreach="countries" t-as="country">
                                     <option t-att-value="country.id" t-esc="country.name" />
@@ -65,7 +65,7 @@
                         <h4 class="section-title">Miscellaneous</h4>
                         <div class="mb-3">
                             <label for="registration_method">Registration Method</label>
-                            <select name="registration_method" id="registration_method" class="form-field" required>
+                            <select name="registration_method" id="registration_method" class="form-field" required="required">
                                 <option value="">Select a method</option>
                                 <option value="Amazonia Mall">Amazonia Mall</option>
                                 <option value="West Central Mall">West Central Mall</option>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="source">How did you find out about us?</label>
-                            <select name="source" id="source" class="form-field" required>
+                            <select name="source" id="source" class="form-field" required="required">
                                 <option value="">Select an option</option>
                                 <option value="TV Advertisements">TV Advertisements</option>
                                 <option value="Referral">Referral</option>
@@ -91,7 +91,7 @@
                         <h4 class="section-title">Account Specifics</h4>
                         <div class="mb-3">
                             <label for="account_type">Account Type</label>
-                            <select name="account_type" id="account_type" class="form-field" required>
+                            <select name="account_type" id="account_type" class="form-field" required="required">
                                 <option value="Zoon">Personal</option>
                                 <option value="Zoon+">Zoon+</option>
                                 <option value="Staff">Staff</option>
@@ -100,11 +100,11 @@
                         </div>
                         <div class="mb-3">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" class="form-field" required />
+                            <input type="password" name="password" id="password" class="form-field" required="required" />
                         </div>
                         <div class="mb-3">
                             <label for="confirm_password">Confirm Password</label>
-                            <input type="password" name="confirm_password" id="confirm_password" class="form-field" required />
+                            <input type="password" name="confirm_password" id="confirm_password" class="form-field" required="required" />
                         </div>
                     </div>
 
